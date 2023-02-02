@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gifywave.css">
+<script src="gifshot.min.js"></script>
+    <title>gifwave</title>
+</head>
+<body>
+    
+    <main>
+
+        <aside class="sidebar">
+            <section  id="gifoption">
+
+                <div class="form-control">
+                    <label for="">source</label>
+                    <div class="custom-select" >
+                        <select id="gifsource">
+                         <option value="0">select gif source:</option>
+                          <option value="1">video</option>
+                          <option value="2">webcam</option>
+
+                        </select>
+                      </div>
+                </div>
+
+                <div id="videoselector" class="file-selector">
+                    <video src="" autoplay="true" alt=""></video>
+                    <input type="file" id="videofile">  
+                </div>
+
+
+                <div class="form-control">
+                    <label for="">gif type</label>
+                    <div class="custom-select" >
+                        <select id="giftype" value="0">
+                            <option value="0">select gif type:</option>
+                          <option value="0">animated</option>
+                          <option value="1">snapshot</option>
+                        </select>
+                      </div>
+                </div>
+
+                <div class="form-control">
+                 <label for=""> gif width</label>
+                    <input type="range" min="1" max="500" value="256" name="gifWidth" role="width" class="slider">
+                </div>
+                <div class="form-control">
+                    <label for=""> gif width</label>
+                    <input type="range" min="1" max="500" value="256" name="gifHeight" role="height" class="slider">
+                </div>
+                <div class="form-control">
+                    <label for="">interval</label>
+                    <input type="number" min="1" name="interval" max="100" value="1" class="">
+                </div>
+                <div class="form-control">
+                    <label for="">Number of Frames</label>
+                    <input type="number" name="numFrames" min="1" max="100" value="5" class="">
+                </div>
+                <div class="form-control">
+                    <label for="">frames  duration</label>
+                    <input type="number" name="frameDuration" min="1" max="100" value="2" class="">
+                </div>
+                <div class="form-control">
+                    <label for="">git text</label>
+                    <input type="text" name="text"  value="thanks for using gifwave" >
+                </div>
+                <div class="form-control">
+                    <label for="">font size</label>
+                    <input type="number" name="fontSize"  value="40" >
+                </div>
+
+                <div class="form-control">
+                    <label for="">font color</label>
+                    <input type="color" name="fontColor"  value="#ff5500" >
+                </div>
+
+
+
+                <div class="form-control">
+                    <label for="">font weight</label>
+                    <div class="custom-select" >
+                        <select name="fontWeight" value="normal">
+                          <option value="normal">normal</option>
+                          <option value="bold">bold</option>
+                        </select>
+                      </div>
+                </div>
+
+
+
+
+                <div class="form-control">
+                    <label for="">text align</label>
+                    <div class="custom-select" >
+                        <select name="textAlign" value="center">
+                        <option value="0">select a text align</option>
+                          <option value="center">center</option>
+                          <option value="left">left</option>
+                          <option value="right">right</option>
+                        </select>
+                      </div>
+                </div>
+             
+
+            </section>
+        </aside>
+         <div class="content">
+            <header> 
+                <h1>Gifwave</h1>
+                <button id="createbtn"> create gif</button>
+             </header>
+             <div class="output-div">
+                <h2>preview</h2>
+                
+                <div id="previewdiv" style="height:256px; width:256Px">
+                    <div id="previewinfo" style="height: 100%; width: 100%;">
+                        <span style="margin: auto; display: block;position: absolute;">256 * 256</span>
+                    </div>
+                    <div class="loader" id="previewloader"></div>
+                    <img src="" id="preview" width="100%" class="hidden" height="100%" alt="preview">
+                </div>
+
+                
+                
+             </div>
+         </div>
+    </main>
+
+
+<script src="gifywave.css"></script>
+
+</body>
+</html>
