@@ -1,3 +1,11 @@
+/*Copyrights for code authored by elodream Inc. is licensed under the following terms:
+MIT License
+Copyright  2023 Yahoo Inc.
+*/
+
+
+/*gifywave.css*/
+
 :root
 {
 
@@ -5,7 +13,6 @@
     --sidebar-bg:#004346;
     --header-bg:#014f52;
     --pink-1:#f80074;
-    /* #014f52; */
 }
 *
 {
@@ -260,7 +267,7 @@ border-color:var(--pink-1) ;
   align-items: center;
   justify-content: center;
   margin: auto;
-  background-color: #eee;
+  background-color: #ddd;
 }
 
 .file-selector input
@@ -296,7 +303,7 @@ z-index: 10;
   .loader {
     border: 16px solid #f3f3f3;
     border-radius: 50%;
-    border-top: 16px solid #3498db;
+    border-top: 16px solid var(--pink-1);
     width: 120px;
     height: 120px;
     -webkit-animation: spin 2s linear infinite; /* Safari */
